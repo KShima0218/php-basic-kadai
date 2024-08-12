@@ -17,7 +17,7 @@
                     $this->name =$name;
                     $this->price = $price;
                 }
-                public function Food_price(){
+                public function show_price(){
                     echo $this->price. '<br>';
                 }
 
@@ -33,7 +33,7 @@
                     $this->height =$height;
                     $this->weight =$weight;
                 }
-                public function Animal_height(){
+                public function show_height(){
                     echo $this->height. '<br>';
                 }
             
@@ -45,8 +45,8 @@
            $Animal = new Animal('dog' , 60 , 5000);
            print_r($Animal); 
            echo '<br>';
-           $Food->Food_price();
-           $Animal->Animal_height();
+           $Food->show_price();
+           $Animal->show_height();
            
         ?>
      </p>
